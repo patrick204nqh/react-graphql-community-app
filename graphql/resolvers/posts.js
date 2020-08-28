@@ -5,7 +5,7 @@ module.exports = {
   Query: {
     async getPosts() {
       try {
-        const posts = await Post.find();
+        const posts = await Post.find().sort({ createPost: -1 });
         return posts;
       } catch (err) {
         throw new Error(err);
@@ -32,7 +32,7 @@ module.exports = {
         body,
         user: user.id,
         username: user.username,
-        createAt: new Date().toISOString()
+        createdAt: new Date().toISOString()
       });
 
       const post = await newPost.save();
