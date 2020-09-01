@@ -1,4 +1,4 @@
-# Patrick's Project (ReactJS & GraphQL)
+# Patrick's Project (ReactJS-Hooks & GraphQL)
 
 1. Source videos:
 
