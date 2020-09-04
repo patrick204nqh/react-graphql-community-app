@@ -11,3 +11,7 @@
   width: 400px;
   margin: 1rem auto;
 }
+.ui.teal.button:focus,
+.ui.teal.buttons .button:focus {
+  background-color: #00b5ad;
+}
