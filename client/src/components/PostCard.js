@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 
 import { AuthContext } from '../context/auth';
 import LikeButton from './LikeButton';
+<<<<<<< HEAD
 import DeleteButton from './DeleteButton';
+=======
+>>>>>>> 5e05384a2237fbf8ff0bb25b30a0b201edd3707e
 
 function PostCard({
   post: { body, createdAt, id, username, likeCount, commentCount, likes }
