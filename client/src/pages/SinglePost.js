@@ -41,30 +41,32 @@ function SinglePost(props) {
             />
           </Grid.Column>
           <Grid.Column width={10}>
-            <Card.Content>
-              <Card.Header>{username}</Card.Header>
-              <Card.Meta>{moment(createdAt).fromNow()}</Card.Meta>
-              <Card.Description>{body}</Card.Description>
-            </Card.Content>
-            <hr />
-            <Card.Content extra>
-              <LikeButton user={user} post={{ id, likeCount, likes }} />
-              <Button
-                as="div"
-                labelPosition="right"
-                onClick={() => console.log('comment on post')}
-              >
-                <Button basic color="blue">
-                  <Icon name="comments" />
+            <Card>
+              <Card.Content>
+                <Card.Header>{username}</Card.Header>
+                <Card.Meta>{moment(createdAt).fromNow()}</Card.Meta>
+                <Card.Description>{body}</Card.Description>
+              </Card.Content>
+              <hr />
+              <Card.Content extra>
+                <LikeButton user={user} post={{ id, likeCount, likes }} />
+                <Button
+                  as="div"
+                  labelPosition="right"
+                  onClick={() => console.log('comment on post')}
+                >
+                  <Button basic color="blue">
+                    <Icon name="comments" />
+                  </Button>
+                  <Label basic color="blue" pointing="left">
+                    {commentCount}
+                  </Label>
                 </Button>
-                <Label basic color="blue" pointing="left">
-                  {commentCount}
-                </Label>
-              </Button>
-              {user && user.username === username && (
-                <DeleteButton postId={id} callback={deletePostCallback} />
-              )}
-            </Card.Content>
+                {user && user.username === username && (
+                  <DeleteButton postId={id} callback={deletePostCallback} />
+                )}
+              </Card.Content>
+            </Card>
           </Grid.Column>
         </Grid.Row>
       </Grid>

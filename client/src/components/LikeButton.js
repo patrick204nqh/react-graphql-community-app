@@ -34,11 +34,7 @@ function LikeButton({ user, post: { id, likeCount, likes } }) {
     )
 
   return (
-<<<<<<< HEAD
     <Button as="div" labelPosition="right" onClick={likePost}>
-=======
-    <Button labelPosition="right" onClick={likePost}>
->>>>>>> 5e05384a2237fbf8ff0bb25b30a0b201edd3707e
       {likeButton}
       <Label basic color="teal" pointing="left">
         {likeCount}
