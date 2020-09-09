@@ -12,3 +12,8 @@
   
 - folder/**server**
   > npm run serve
+
+3. Deploy Web:
+
+- Server
+  > https://obscure-headland-21140.herokuapp.com/
