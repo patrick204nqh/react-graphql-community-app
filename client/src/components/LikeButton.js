@@ -42,7 +42,6 @@ function LikeButton({ user, post: { id, likeCount, likes } }) {
       >
         {likeButton}
       </MyPopup>
-      {likeButton}
       <Label basic color="teal" pointing="left">
         {likeCount}
       </Label>
