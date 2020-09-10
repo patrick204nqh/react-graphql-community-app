@@ -18,4 +18,4 @@
 - Server
   > https://obscure-headland-21140.herokuapp.com/
 - Client
-  > https://competent-cori-877d23.netlify.app/
+  > https://amazing-kare-63b2cf.netlify.app/
